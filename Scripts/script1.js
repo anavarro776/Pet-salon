@@ -14,7 +14,7 @@ console.table(fruits);
 
 
 fruits.push("Watermelon");//adds from end
-fruits.pop()//removes from thev end
+fruits.pop()//removes from theend
 fruits.unshift()//adding from begining
 fruits.shift()// remove from beginng
 
