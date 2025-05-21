@@ -55,8 +55,11 @@ function getPetNames(){
        
     }
     
-
+   
+    
 }
 
+getPetNames();
+petCount();
 
 
