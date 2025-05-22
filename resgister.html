@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,17 +15,64 @@
                 <a href="regrister.html">Register</a>
             </nav>
 </header>
-<main>
+<main class="container">
      <h2> Register A New Pet</h2>
-     <button id="btnReg" onclick="getPetNames()">Click Here For Pet Names</button>
+     <div class="form-conatiner">
+        <div class="mb-3">
+            <label>Name:</label>
+            <input class="form-control" type="text" id="txtName"/>
+        </div>
+
+        <div class="mb-3">
+            <Label>Age:</Label>
+            <input class="form-control" type="number" id="txtAge" min="0"/>
+
+        </div>
+
+        <div class="mb-3">
+            <label>Gender:</label>
+            <select class="form-control" id="txtGender">
+                <option value=""  id="txtGender"disabled selected >--Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        
+            <div class="mb-3">
+                <label>Breed:</label>
+                <input class="form-control" type="text" id="txtBreed"/>
+            </div>
+            <div class="mb-3">
+                <label>Services:</label>
+                 <select class="form-control" id="selectService">
+                <option value=""  id="selectService"disabled selected >--Select Services</option>
+                <option value="nails">Nails</option>
+                <option value="walking">Dog Walking</option>
+            </select>
+              
+            </div>
+
+            <div>
+                <button class="btn btn-primary" onclick="register()">Register</button>
+            </div>
+
+        </div>
+
+        <div id="info">
+            <p> Total Pets:2</p>
+
+        </div>
+
+        
+     
      <ul id="List"></ul>
      
      
-     <h3> The Pets We Currently Have</h3>
-     <button  onclick="petCount()">Click Here To See Current Amount Of Pets</button>
+
+
      <p id="Count"></p>
     </main>
-    
+    </div>
     <script src="./register.js"></script>
 </body>
 </html>
