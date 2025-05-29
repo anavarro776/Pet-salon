@@ -19,13 +19,13 @@ function Pet(name,age,gender,breed,service){
 }
 
 function register(){
-    let newPet= Pet(inputName.value,inputAge.value,inputGender,inputBreed.value);
+    let newPet= new Pet(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value);
     if (isValid(newPet)){
         pets.push(newPet);
     displayInfo();
     clearForm();
-     
      displayRow();
+     
     }
     else {
         alert("Please Fill Out Whole Form");
@@ -51,15 +51,15 @@ function displayRow(){
         list+=`
  
 
-    <tr>
-        <td>${pets[i].name}<td>
-         <td>${pets[i].age}<td>
-        <td>${pets[i].gender}<td>
-        <td>${pets[i].breed}<td>
-        <td>${pets[i].service}<td>
-        <td> <button class="btn btn-danger btn-sm">Delete</button><td>
-    <tr>        
-    
+        <tr id="${i}">
+            <td>${pets[i].name}</td>
+            <td>${pets[i].age}</td>
+            <td>${pets[i].gender}</td>
+            <td>${pets[i].breed}</td>
+            <td>${pets[i].service}</td>
+            <td> <button class="btn btn-danger btn-sm" onclick="deletePet(${i})">Delete</button></td>
+        <tr>        
+        
             `;
      
    
@@ -105,6 +105,7 @@ function init(){
       pets.push(pet1,pet2,pet3);
     console.log(pets);
     displayInfo();
+    displayRow();
 }
 
 window.onload=init;

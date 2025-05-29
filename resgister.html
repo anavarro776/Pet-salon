@@ -8,14 +8,36 @@
 </head>
 <body>
 <header>
+
+    
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark bg-gradient">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fashion Pet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a  class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resgister.html">Register</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
      <h1> The Fashion Pet</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="regrister.html">Register</a>
-            </nav>
+           
+        
 </header>
-<main class="container">
+<main class="container mt-4">
      <h2> Register A New Pet</h2>
      <div class="form-conatiner">
         <div class="mb-3">
@@ -42,14 +64,15 @@
                 <label>Breed:</label>
                 <input class="form-control" type="text" id="txtBreed"/>
             </div>
+
             <div class="mb-3">
                 <label>Services:</label>
                  <select class="form-control" id="selectService">
-                <option value=""  id="selectService"disabled selected >--Select Services</option>
-                <option value="nails">Nails</option>
-                <option value="walking">Dog Walking</option>
-            </select>
-              
+                    <option value=""  id="selectService"disabled selected >--Select Services</option>
+                    <option value="nails">Nails</option>
+                    <option value="walking">Dog Walking</option>
+                    <option value="walking">Grooming</option>
+                </select>
             </div>
 
             <div>
@@ -65,19 +88,18 @@
 
         
      
-     <ul id="List"></ul>
      
     
      
             
 
-     
     <div>
+    
       
       <h2>Registerd Pets  </h2>
             <div class=" container row" >
-                 <table  class="table">
-                    <thead>
+                 <table  class="table table-striped">
+                    <thead class="table-dark">
                         <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Age</th>
@@ -89,7 +111,7 @@
 
                     </thead> 
                     <tbody id="petTable">
-                        <!-- Here  The Rows Are Displayed   -->
+                        <!-- Here  The Rows Are Displayed -->
                     </tbody>
 
                  </table>
@@ -98,7 +120,20 @@
      
 
     </main>
-    </div>
+
+    <footer>
+      <div class="card">
+  <div class="card-header">
+    
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Check Our Services</h5>
+    <p class="card-text">Lorem ipsum dolor sit.</p>
+    <a href="services.html" class="btn btn-primary">Services</a>
+  </div>
+</div>
+    </footer>
+    
     <script src="./display.js"></script>
     <script src="./register.js"></script>
     
