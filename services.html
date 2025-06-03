@@ -7,7 +7,7 @@
     <title>Services</title>
 
 </head>
-<body>
+<body >
    
     <header>
  
@@ -35,7 +35,7 @@
   </div>
 </nav>
 
-    
+</header>    
   
 
 
@@ -47,10 +47,11 @@
       
                 
         
-</header>
-<main>
-<div class="card-group">
-  <div class="card">
+
+
+<main class=" p-3 mb-2 bg-secondary text-white">
+<div class="card-group ">
+  <div class="card ">
     <img src="imgs/dog walking.jpg" class="card-img-top" alt="dog walking">
     <div class="card-body">
       <h5 class="card-title">Dog Walking</h5>
@@ -58,7 +59,7 @@
       <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit.s</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card ">
     <img src="imgs/nail clipping.jpg" class="card-img-top" alt="nail clipping">
     <div class="card-body">
       <h5 class="card-title">Nails</h5>
@@ -75,22 +76,30 @@
     </div>
   </div>
 </div>
+<br>
+<div class="input-group input-group-sm mb-3 ">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Type Of Service:</span>
+  <input id="typeTxt" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <small  id="textIsRequiered">This Field Is Requierd</small>
+</div>
+<br>
+
+<div class="input-group input-group-sm mb-3 ">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Price:</span>
+  <input id="priceTxt" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <small id="priceRequierment">This Field Is Requierd</small>
+</div>
+
+<button id="register-btn" class="btn btn-primary" onclick="register()">Register</button>
 
 
 </main>
 
- <footer>
-      <div class="card">
-  <div class="card-header">
-    
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Register Here</h5>
-    <p class="card-text">Lorem ipsum dolor sit.</p>
-    <a href="resgister.html" class="btn btn-primary">Register</a>
-  </div>
-</div>
-    </footer>
+
+
+  <script src="./Scripts/services.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="Scripts/storeManger.js"></script>
 </body>
 
 

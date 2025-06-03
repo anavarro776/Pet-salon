@@ -31,6 +31,6 @@ function deletePet(petIndex){
     console.log("delete pet"+petIndex);
     document.getElementById(petIndex).remove();
     pets.splice(petIndex,1);
-
+    document.getElementById("info") .innerHTML= `<p>Total Pets Is :${pets.length}</p>`;
 }
 
